@@ -1,6 +1,6 @@
 var config = {
     plugins: [
-    //	, "sample" //sample plugin
+    	, "sample" //sample plugin
     ],
 
     // // Config for pilot plugin

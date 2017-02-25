@@ -1,4 +1,5 @@
 var express = require('express'),
+    favicon = require('express-favicon'),
     app = express(),
     fs = require('fs'),
     path = require('path'),
@@ -25,7 +26,7 @@ var scripts = [],
 app.set('port', process.env.PORT || 1500);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs', { pretty: true });
-//app.use(express.favicon());
+app.use(favicon());
 //app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/components", express.static(path.join(__dirname, 'bower_components')));
@@ -64,7 +65,6 @@ function getFilter(ext) {
 
 config.plugins.forEach(function(plugin) {
     console.log("Loading " + plugin + " plugin.");
-
     // Load the backend code
     require(path.join(dir, plugin))(plugin, deps);
 
