@@ -1,0 +1,25 @@
+{
+  "name": "app-template",
+  "version": "0.0.1",
+  "description": "Template for extendable web app based on on Express, Bootstrap, and websockets Edit",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seattleacademy/app-template.git"
+  },
+  "author": "Gary Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seattleacademy/app-template/issues"
+  },
+  "homepage": "https://github.com/seattleacademy/app-template#readme"
+}
