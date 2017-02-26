@@ -4,7 +4,7 @@
         console.log("Loading sample plugin.");
         this.app = app;
 
-        $("#navbarsExampleDefault").prepend('<button id="sampleButton">sample button</button>');
+        $("#navbarsExampleDefault").append('<button id="sampleButton">sample button</button>');
 
         this.listen();
     };
